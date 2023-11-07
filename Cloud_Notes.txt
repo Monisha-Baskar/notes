@@ -1,0 +1,35 @@
+******************************25/09/2023***************************
+https://portal.azure.com/#home
+https://github.com/deeksharm/DP203
+
+1.
+
+SELECT
+	CONCAT(FirstName,' ', MiddleName,' ', LastName) AS FullName,
+	Phone,
+	EmailAddress,
+	CompanyName
+FROM
+	[SalesLT].[Customer]
+
+2.
+
+SELECT CompanyName, Count(CustomerID) AS TOTAL from [SalesLT].[Customer] 
+group by CompanyName
+order by TOTAL desc
+3.
+SELECT
+    A.CountryRegion AS Country,
+    COUNT(DISTINCT C.CustomerID) AS No_Of_Customers_In_Country
+FROM
+    [SalesLT].[Address] A
+INNER JOIN
+    [SalesLT].[CustomerAddress] CA ON A.AddressID = CA.AddressID
+INNER JOIN
+    [SalesLT].[Customer] C ON CA.CustomerID = C.CustomerID
+GROUP BY
+    A.CountryRegion;
+
+
+CREATE USER UserMonisha WITH password='Monisha';
+GRANT SELECT ON [SalesLT].[Customer] TO UserMonisha;
