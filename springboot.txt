@@ -1,0 +1,134 @@
+Certainly! Here's a list of 50 Spring Boot interview questions along with answers tailored for someone with 2 years of experience:
+
+1. **What is Spring Boot?**
+   - Spring Boot is an open-source Java-based framework used to create microservices, standalone applications, and web applications with ease.
+
+2. **Explain the advantages of using Spring Boot.**
+   - Spring Boot simplifies the setup and configuration of Spring applications.
+   - It provides embedded servers for easy deployment.
+   - Auto-configuration reduces the need for manual configuration.
+   - It promotes convention over configuration, reducing boilerplate code.
+   - Offers a powerful suite of tools and extensions.
+
+3. **What are the key components of Spring Boot?**
+   - Spring Boot Starter, Auto-configuration, Spring Boot CLI, Actuator, Spring Boot Initializer.
+
+4. **What is Spring Boot Starter?**
+   - Spring Boot Starters are a set of convenient dependency descriptors that you can include in your application.
+
+5. **Explain Auto-configuration in Spring Boot.**
+   - Auto-configuration automatically configures your Spring application based on the jar dependencies you have added.
+
+6. **What is Spring Boot CLI?**
+   - Spring Boot CLI is a command-line tool for running and testing Spring Boot applications.
+
+7. **What is Spring Boot Actuator?**
+   - Spring Boot Actuator provides monitoring and management endpoints for your application.
+
+8. **What is the Spring Boot Initializer?**
+   - Spring Boot Initializer is a web application that can be used to generate a new Spring Boot project structure.
+
+9. **What is the role of @SpringBootApplication annotation?**
+   - @SpringBootApplication is a combination of @Configuration, @EnableAutoConfiguration, and @ComponentScan annotations.
+
+10. **Explain the difference between @Component, @Repository, @Service, and @Controller annotations.**
+    - @Component is a generic stereotype annotation for any Spring-managed component.
+    - @Repository is a stereotype annotation for persistence layer components.
+    - @Service is a stereotype annotation for service layer components.
+    - @Controller is a stereotype annotation for presentation layer components (typically used in Spring MVC).
+
+11. **What is the difference between @ComponentScan and @SpringBootApplication annotations?**
+    - @ComponentScan scans the packages for Spring components, whereas @SpringBootApplication also includes @Configuration and @EnableAutoConfiguration.
+
+12. **What is the purpose of the application.properties (or application.yml) file in Spring Boot?**
+    - It is used to externalize configuration properties from the application code.
+
+13. **How does Spring Boot handle logging?**
+    - Spring Boot uses Commons Logging for its internal logging but can be configured to use other logging frameworks like Logback, Log4j2, etc.
+
+14. **Explain the concept of Spring Boot Profiles.**
+    - Spring Boot Profiles provide a way to segregate parts of your application configuration and make it available only in certain environments.
+
+15. **How can you define a custom configuration file in Spring Boot?**
+    - You can define a custom configuration file by specifying its name using the `spring.config.name` property in the application.properties file.
+
+16. **Explain Spring Boot Starters.**
+    - Spring Boot Starters are a set of convenient dependency descriptors that you can include in your application's build file to simplify dependency management.
+
+17. **What is Spring Boot DevTools?**
+    - Spring Boot DevTools is a set of tools that improve the development experience with features like automatic application restart, live reload, etc.
+
+18. **How does Spring Boot support testing?**
+    - Spring Boot provides robust support for testing through tools like JUnit, Mockito, and Spring Boot Test.
+
+19. **What is the purpose of the @SpringBootTest annotation?**
+    - @SpringBootTest is used to bootstrap the application context for integration tests in Spring Boot.
+
+20. **How can you override the default properties provided by Spring Boot?**
+    - You can override default properties by specifying them in the application.properties or application.yml file of your project.
+
+21. **Explain Spring Boot Actuator Endpoints.**
+    - Spring Boot Actuator Endpoints are a set of pre-built HTTP endpoints provided by Spring Boot for monitoring and managing your application.
+
+22. **What are the different HTTP methods supported by Spring Boot Actuator?**
+    - GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH.
+
+23. **How can you secure Spring Boot Actuator endpoints?**
+    - You can secure Actuator endpoints using Spring Security.
+
+24. **What is Spring Boot Admin?**
+    - Spring Boot Admin is a community project that provides a web interface for managing and monitoring Spring Boot applications.
+
+25. **What is Spring Data JPA, and how does it integrate with Spring Boot?**
+    - Spring Data JPA is a part of the larger Spring Data family and provides a set of abstractions to work with relational databases.
+    - It integrates with Spring Boot through auto-configuration.
+
+26. **How does Spring Boot handle database migrations?**
+    - Spring Boot can use tools like Flyway or Liquibase for database migrations.
+
+27. **What is Spring Boot Actuator Health Check?**
+    - Spring Boot Actuator Health Check is an endpoint provided by Spring Boot Actuator to check the health of your application.
+
+28. **Explain the purpose of @RestController annotation.**
+    - @RestController annotation is a specialized version of the @Controller annotation used to define RESTful web services.
+
+29. **What is the role of @Autowired annotation?**
+    - @Autowired annotation is used for automatic dependency injection in Spring Boot.
+
+30. **How do you handle exceptions in Spring Boot?**
+    - Exceptions can be handled using @ExceptionHandler, @ControllerAdvice, or by defining custom exception handler classes.
+
+31. **Explain the role of @RequestMapping annotation.**
+    - @RequestMapping annotation is used to map web requests to specific handler methods in Spring MVC.
+
+32. **What is Spring Boot Actuator Info endpoint?**
+    - Spring Boot Actuator Info endpoint provides information about the application.
+
+33. **How can you enable CORS (Cross-Origin Resource Sharing) in Spring Boot?**
+    - You can enable CORS by configuring it in your Spring Boot application either using annotations or configuration classes.
+
+34. **What is Spring Boot Banner?**
+    - Spring Boot Banner is the message displayed when the application starts.
+
+35. **How can you schedule tasks in Spring Boot?**
+    - You can schedule tasks using @Scheduled annotation or by implementing the SchedulingConfigurer interface.
+
+36. **What is the role of @EnableAutoConfiguration annotation?**
+    - @EnableAutoConfiguration annotation enables Spring Boot's auto-configuration feature.
+
+37. **How does Spring Boot manage transactions?**
+    - Spring Boot leverages Spring's declarative transaction management capabilities through annotations like @Transactional.
+
+38. **Explain the purpose of Spring Boot Actuator Metrics.**
+    - Spring Boot Actuator Metrics provides information about application performance metrics.
+
+39. **How can you enable HTTPS in Spring Boot?**
+    - You can enable HTTPS in Spring Boot by configuring SSL certificates in the application.properties file.
+
+40. **What is Spring Boot CommandLineRunner?**
+    - Spring Boot CommandLineRunner is an interface used to run code after the application context has been loaded.
+
+41. **How do you handle form submission in Spring Boot?**
+    - Form submission can be handled using Spring MVC and the @ModelAttribute annotation.
+
+42. **What is Spring Boot Embedded Servlet Container
